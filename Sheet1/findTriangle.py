@@ -1,5 +1,11 @@
-year = int(input("Enter a year: "))
-if(year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
-    print(year, "is a leap year.")
+angle1 = int(input("Enter first angle: "))
+angle2 = int(input("Enter second angle: ")) 
+angle3 = int(input("Enter third angle: "))
+if angle1 + angle2 + angle3 != 180:
+    print("this is not a triangle.")
+elif angle1 == 90 or angle2 == 90 or angle3 == 90:
+    print("This is a right triangle.")
+elif angle1 > 90 or angle2 > 90 or angle3 > 90:
+    print("This is an obtuse triangle.")
 else:
-    print(year, "is not a leap year.")
+    print("This is an acute triangle.")
