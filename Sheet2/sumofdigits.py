@@ -1,6 +1,8 @@
-N = int(input("Enter a number: "))
-sum_digits = 0
-while N > 0:
-    sum_digits += N % 10
-    N //= 10
-print("Sum of digits is:", sum_digits)
+num = int(input("Enter number: "))
+sum = 0
+while num > 0:
+    digit = num % 10
+    sum+=digit
+    num = num//10
+
+print("Sum of digits in the number:", sum)
