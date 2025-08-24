@@ -1,10 +1,6 @@
-num = int(input("Enter a number: "))
-for i in range(1, num+1):
-    if num % i == 0:
-        print(i)
-
-# while(i <= num):
-#     if num % i == 0:
-#         print(i)
-#     i += 1
-
+n = int(input("Enter a number: "))
+count = 0
+while n !=0:
+    n //= 10
+    count += 1
+print(f"Number of digits in the given number is: {count}")
