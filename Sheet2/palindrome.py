@@ -1,8 +1,12 @@
-n = int(input("Enter a  number: "))
-sum = 0 
-for i in range(1, n+1):
-    if i%2 != 0:
-        sum += i
-        # print(i)
+num = int(input("Enter a number: "))
+original_num = num
+rev_num = 0
+while num!=0:
+    digit = num%10
+    rev_num = (rev_num *10) +digit
+    num//=10
 
-print(f"Sum of odd number from 1 to {n} is: {sum}")
+if original_num == rev_num:
+    print(f"{original_num} is a palindrome")
+else:
+    print(f"{original_num} is not a palindrome")
